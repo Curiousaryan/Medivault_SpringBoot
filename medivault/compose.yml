@@ -1,0 +1,12 @@
+services:
+  dbservices:
+    image: mysql
+    container_name: MediVault
+    restart: always
+    ports:
+      - "3308:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: EURU
+      MYSQL_DATABASE: medivault_db
+    volumes:
+      - C:/Users/ATHARVA/Desktop/dcoker:/var/lib/mysql
